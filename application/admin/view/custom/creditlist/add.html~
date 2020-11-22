@@ -1,0 +1,27 @@
+<div class="panel panel-default panel-intro">
+    {:build_heading()}
+
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                 <div id="toolbar" class="toolbar">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}" ><i class="fa fa-refresh"></i> </a>
+                        <a href="javascript:;" class="btn btn-info btn-addselect btn-disabled disabled {:$auth->check('custom/adminselect/addcredit')?'':'hide'}" title="{:__('addcredit')}" ><i class="fa fa-leaf"></i> {:__('addcredit')}</a>
+                  </div>   
+    					 
+    					 
+                     请选择授信级别：<input type="radio" name="credittype" value="1" checked="checked">仅查看
+  						     &nbsp; &nbsp; &nbsp; &nbsp;
+                     <input type="radio" name="credittype" value="2"  >可编辑
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="{:$auth->check('custom/adminselect/edit')}" 
+                           data-operate-del="{:$auth->check('custom/adminselect/del')}" 
+                           width="100%">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

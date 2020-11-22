@@ -1,0 +1,65 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group" visibility: hidden>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_id" data-rule="required" class="form-control" name="row[custom_id]" type="text" value="{$custom_id|htmlentities}">
+        </div>
+    </div>     
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_bill_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[custom_bill_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-custom_bill_content" class="form-control editor" rows="5" name="row[custom_bill_content]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_bill_type" class="form-control" name="row[custom_bill_type]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_order')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_bill_order" class="form-control" name="row[custom_bill_order]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_account')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_bill_account" class="form-control" name="row[custom_bill_account]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_person')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_bill_person" class="form-control" name="row[custom_bill_person]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_payment_method')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_bill_payment_method" class="form-control" name="row[custom_bill_payment_method]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_remark')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-custom_bill_remark" class="form-control " rows="5" name="row[custom_bill_remark]" cols="50"></textarea>
+        </div>
+    </div>
+    
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

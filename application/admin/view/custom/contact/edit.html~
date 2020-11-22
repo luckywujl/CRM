@@ -1,0 +1,58 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_name" data-rule="required" class="form-control" name="row[custom_contact_name]" type="text" value="{$row.custom_contact_name|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_email')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_email" class="form-control" name="row[custom_contact_email]" type="text" value="{$row.custom_contact_email|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_mobile')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_mobile" class="form-control" name="row[custom_contact_mobile]" type="text" value="{$row.custom_contact_mobile|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_phone" class="form-control" name="row[custom_contact_phone]" type="text" value="{$row.custom_contact_phone|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_qq')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_QQ" class="form-control" name="row[custom_contact_QQ]" type="text" value="{$row.custom_contact_QQ|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_wchat')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_wchat" class="form-control" name="row[custom_contact_wchat]" type="text" value="{$row.custom_contact_wchat|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_websitname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_websitname" class="form-control" name="row[custom_contact_websitname]" type="text" value="{$row.custom_contact_websitname|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_contact_webtype')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_contact_webtype" class="form-control" name="row[custom_contact_webtype]" type="text" value="{$row.custom_contact_webtype|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

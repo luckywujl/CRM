@@ -1,0 +1,71 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_content1')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_content1" class="form-control" name="row[custom_payment_content1]" type="text" value="{$row.custom_payment_content1|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_paytime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_paytime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[custom_payment_paytime]" type="text" value="{:$row.custom_payment_paytime?datetime($row.custom_payment_paytime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_content" class="form-control" name="row[custom_payment_content]" type="text" value="{$row.custom_payment_content|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_account')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_account" class="form-control" name="row[custom_payment_account]" type="number" value="{$row.custom_payment_account|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_bidding')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_bidding" class="form-control" name="row[custom_payment_bidding]" type="text" value="{$row.custom_payment_bidding|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_handler')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_handler" class="form-control" name="row[custom_payment_handler]" type="text" value="{$row.custom_payment_handler|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_method')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_method" class="form-control" name="row[custom_payment_method]" type="text" value="{$row.custom_payment_method|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_type" class="form-control" name="row[custom_payment_type]" type="text" value="{$row.custom_payment_type|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_person')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_payment_person" class="form-control" name="row[custom_payment_person]" type="text" value="{$row.custom_payment_person|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_remark')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-custom_payment_remark" class="form-control " rows="5" name="row[custom_payment_remark]" cols="50">{$row.custom_payment_remark|htmlentities}</textarea>
+        </div>
+    </div>
+    
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

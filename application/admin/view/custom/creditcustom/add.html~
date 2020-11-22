@@ -1,0 +1,49 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_id" data-rule="required" data-source="custom/index" class="form-control selectpage" name="row[custom_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_admin')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_admin" class="form-control" name="row[custom_admin]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_credit_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-custom_credit_type" class="form-control selectpicker" name="row[custom_credit_type]">
+                {foreach name="customCreditTypeList" item="vo"}
+                    <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Company_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-company_id" data-rule="required" data-source="company/index" class="form-control selectpage" name="row[company_id]" type="text" value="">
+        </div>
+    </div>
+
+	<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Custominfo.custom_full_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_admin" class="form-control" name="row[custominfo.custom_full_name]" type="text">
+        </div>
+    </div>    
+    
+    
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
