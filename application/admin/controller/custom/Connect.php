@@ -21,7 +21,7 @@ class Connect extends Backend
     protected $dataLimit = 'personal';
     protected $dataLimitField = 'company_id';
     protected $dataCreateField = 'admin_id';
-    protected $searchFields = 'custom_connect_content';
+    protected $searchFields = 'custominfo.custom_full_name';
 
     public function _initialize()
     {
@@ -35,12 +35,16 @@ class Connect extends Backend
      * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
      * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
      */
-     /**
+    
+
+    /**
      * 查看
      */
     public function index()
     {
-    	  $params = $this->request->param();
+        //当前是否为关联查询
+        $this->relationSearch = true;
+        $params = $this->request->param();
         //设置过滤方法
         $this->request->filter(['strip_tags']);
         if ($this->request->isAjax()) {
@@ -49,18 +53,40 @@ class Connect extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+            if(input('?custom_id')) {
             $total = $this->model
+                ->with(['custominfo','admin'])
                 ->where($where)
-					 ->where('custom_id',$params['custom_id'])
+					 ->where('connect.custom_id',$params['custom_id'])
+					 //->where('admin_id',$this->auth->id)
                 ->order($sort, $order)
                 ->count();
 
             $list = $this->model
+                ->with(['custominfo','admin'])
                 ->where($where)
-                ->where('custom_id',$params['custom_id'])
+                ->where('connect.custom_id',$params['custom_id'])
+                //->where('admin_id',$this->auth->id)
                 ->order($sort, $order)
                 ->limit($offset, $limit)
                 ->select();
+             }else {
+             	$total = $this->model
+					 ->with(['custominfo','admin'])
+                ->where($where)
+					 ->where('admin.id',$this->auth->id)
+					 
+                ->order($sort, $order)
+                ->count();
+
+            $list = $this->model
+                ->with(['custominfo','admin'])
+                ->where($where)
+                ->where('admin.id',$this->auth->id)
+                ->order($sort, $order)
+                ->limit($offset, $limit)
+                ->select();
+             }
 
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
@@ -69,7 +95,6 @@ class Connect extends Backend
         }
         return $this->view->fetch('index');
     }
-    
     /**
      * 添加
      */
@@ -118,8 +143,9 @@ class Connect extends Backend
             }
             $this->error(__('Parameter %s can not be empty', ''));
         }
+       
+      
         	$this->assign('custom_id',$this->request->param("custom_id")); 
-        return $this->view->fetch();
+         return $this->view->fetch();
     }
-
 }

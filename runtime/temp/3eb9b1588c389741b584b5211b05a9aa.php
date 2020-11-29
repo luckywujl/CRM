@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/sdetail/edit.html";i:1605411302;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/sdetail/edit.html";i:1606404553;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -68,6 +68,12 @@
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_sdetail_price'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-custom_sdetail_price" class="form-control" name="row[custom_sdetail_price]" type="number" value="<?php echo htmlentities($row['custom_sdetail_price']); ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_sdetail_unit'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_sdetail_unit" data-source="base/unit/index" data-field="unit" data-primary-key="unit" class="form-control selectpage" name="row[custom_sdetail_unit]" type="text" value="<?php echo htmlentities($row['custom_sdetail_unit']); ?>">
         </div>
     </div>
     <div class="form-group">

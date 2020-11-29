@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:97:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/connect/index.html";i:1606141403;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:102:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/connect/recyclebin.html";i:1605406784;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,25 +58,15 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>
-                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('custom/connect/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
-                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('custom/connect/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('custom/connect/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('custom/connect/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
-
-                        <div class="dropdown btn-group <?php echo $auth->check('custom/connect/multi')?'':'hide'; ?>">
-                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
-                            <ul class="dropdown-menu text-left" role="menu">
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
-                            </ul>
-                        </div>
-
-                        <a class="btn btn-success btn-recyclebin btn-dialog <?php echo $auth->check('custom/connect/recyclebin')?'':'hide'; ?>" href="custom/connect/recyclebin" title="<?php echo __('Recycle bin'); ?>"><i class="fa fa-recycle"></i> <?php echo __('Recycle bin'); ?></a>
+                        <?php echo build_toolbar('refresh'); ?>
+                        <a class="btn btn-info btn-multi btn-disabled disabled <?php echo $auth->check('custom/connect/restore')?'':'hide'; ?>" href="javascript:;" data-url="custom/connect/restore" data-action="restore"><i class="fa fa-rotate-left"></i> <?php echo __('Restore'); ?></a>
+                        <a class="btn btn-danger btn-multi btn-disabled disabled <?php echo $auth->check('custom/connect/destroy')?'':'hide'; ?>" href="javascript:;" data-url="custom/connect/destroy" data-action="destroy"><i class="fa fa-times"></i> <?php echo __('Destroy'); ?></a>
+                        <a class="btn btn-success btn-restoreall <?php echo $auth->check('custom/connect/restore')?'':'hide'; ?>" href="javascript:;" data-url="custom/connect/restore" title="<?php echo __('Restore all'); ?>"><i class="fa fa-rotate-left"></i> <?php echo __('Restore all'); ?></a>
+                        <a class="btn btn-danger btn-destroyall <?php echo $auth->check('custom/connect/destroy')?'':'hide'; ?>" href="javascript:;" data-url="custom/connect/destroy" title="<?php echo __('Destroy all'); ?>"><i class="fa fa-times"></i> <?php echo __('Destroy all'); ?></a>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('custom/connect/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('custom/connect/del'); ?>" 
+                    <table id="table" class="table table-striped table-bordered table-hover"
+                           data-operate-restore="<?php echo $auth->check('custom/connect/restore'); ?>"
+                           data-operate-destroy="<?php echo $auth->check('custom/connect/destroy'); ?>"
                            width="100%">
                     </table>
                 </div>

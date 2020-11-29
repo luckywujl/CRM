@@ -25,7 +25,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'custominfo.custom_full_name', title: __('Custominfo.custom_full_name')},
-                        //{field: 'custom_contact_id', title: __('Custom_contact_id')},
+                        {field: 'custom_contact_id', title: __('Custom_contact_id')},
                         {field: 'custom_contact_name', title: __('Custom_contact_name')},
                         {field: 'custom_contact_email', title: __('Custom_contact_email')},
                         {field: 'custom_contact_mobile', title: __('Custom_contact_mobile')},

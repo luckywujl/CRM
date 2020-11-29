@@ -9,6 +9,5 @@ return [
     'Custom_purpose_remark'  => '备注',
     'Company_id'             => '数据归属',
     'Admin_id'               => '归属人',
-    'Custom_id'              => '客户ID',
-    'Custominfo.custom_full_name' => '客户全称'
+    'Custom_id'              => '客户ID'
 ];

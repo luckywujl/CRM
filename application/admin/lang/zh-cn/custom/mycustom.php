@@ -27,7 +27,7 @@ return [
     'Custom_copyright'             => '版权',
     'Custom_payment_detail'        => '款项明细',
     'Custom_opening_dete'          => '下户日期',
-    'Custom_full_name'             => '客户姓名',
+    'Custom_full_name'             => '客户全称',
     'Custom_baidu_id'              => '53百度ID',
     'Custom_offline_id'            => '53离线宝ID',
     'Custom_bidding_remark'        => '竞价备注',

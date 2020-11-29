@@ -218,7 +218,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                      
+                        {field: 'admin.nickname', title: __('Admin_id')},
                         {field: 'custom_connect_time', title: __('Custom_connect_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'custom_connect_active_phone', title: __('Custom_connect_active_phone')},
                         {field: 'custom_connect_content', title: __('Custom_connect_content')},
@@ -267,6 +267,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'custom_sdetail_time', title: __('Custom_sdetail_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'custom_sdetail_product', title: __('Custom_sdetail_product')},
                         {field: 'custom_sdetail_price', title: __('Custom_sdetail_price'), operate:'BETWEEN'},
+                        {field: 'custom_sdetail_unit', title: __('Custom_sdetail_unit')},
                         {field: 'custom_sdetail_number', title: __('Custom_sdetail_number'), operate:'BETWEEN'},
                         {field: 'custom_sdetail_deadline_time', title: __('Custom_sdetail_deadline_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'custom_sdetail_remark', title: __('Custom_sdetail_remark')},

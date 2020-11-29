@@ -1,0 +1,1793 @@
+---------------------------------------------------------------
+[ 2020-11-28T22:23:46+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/index/login
+[运行时间：0.834252s] [吞吐率：1.20req/s] [内存消耗：659.45kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.021274s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006194s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.022585s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006605s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.026735s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:46+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=index&v=1606573426
+[运行时间：0.033922s] [吞吐率：29.48req/s] [内存消耗：382.05kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000127s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000283s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000042s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/index/login',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1606573426',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000220s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000054s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:48+08:00 ] 127.0.0.1 POST 127.0.0.1:9001/WiGOXzphqV.php/index/login
+[运行时间：0.450363s] [吞吐率：2.22req/s] [内存消耗：637.27kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000117s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000337s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000079s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/index/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1:9001',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '80',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '8ab43bd94bcd8f691e6888cbbfd6bc52',
+  'username' => 'administator',
+  'password' => '123456',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000245s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.126360s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:49+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/index/index
+[运行时间：0.282354s] [吞吐率：3.54req/s] [内存消耗：931.87kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000141s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000323s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000052s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/index/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000270s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/index/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000043s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:49+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/dashboard?addtabs=1
+[运行时间：0.062222s] [吞吐率：16.07req/s] [内存消耗：762.49kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000404s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000324s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000127s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000165s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Dashboard.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/dashboard/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000047s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:49+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=index&v=1606573428
+[运行时间：0.016810s] [吞吐率：59.49req/s] [内存消耗：1,045.86kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000159s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000271s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000035s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/index/index',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1606573428',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000162s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000035s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:49+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=dashboard&v=1606573429
+[运行时间：0.018553s] [吞吐率：53.90req/s] [内存消耗：1,045.01kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000136s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000264s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000047s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/dashboard?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1606573429',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000154s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000024s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:52+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/ddetail?addtabs=1
+[运行时间：0.075593s] [吞吐率：13.23req/s] [内存消耗：764.55kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000109s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000284s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000075s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.ddetail',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/ddetail?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000325s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/ddetail.php
+[ info ] [ RUN ] app\admin\controller\custom\Ddetail->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Ddetail.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/ddetail/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000076s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:52+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.ddetail&v=1606573432
+[运行时间：0.018919s] [吞吐率：52.86req/s] [内存消耗：1,044.02kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000148s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000319s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000049s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/ddetail?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.ddetail',
+  'v' => '1606573432',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000286s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/ddetail.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:53+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/ddetail/index?addtabs=1&sort=custom_ddetail_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573432727
+[运行时间：0.080448s] [吞吐率：12.43req/s] [内存消耗：908.66kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000126s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000349s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000055s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.ddetail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/ddetail?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_ddetail_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573432727',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000183s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/ddetail.php
+[ info ] [ RUN ] app\admin\controller\custom\Ddetail->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Ddetail.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: custom_id[/home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Ddetail.php:54]
+---------------------------------------------------------------
+[ 2020-11-28T22:23:55+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/service?addtabs=1
+[运行时间：0.045502s] [吞吐率：21.98req/s] [内存消耗：764.43kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000121s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000267s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000056s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.service',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/service?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000264s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/service.php
+[ info ] [ RUN ] app\admin\controller\custom\Service->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Service.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/service/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000045s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:55+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.service&v=1606573435
+[运行时间：0.019973s] [吞吐率：50.07req/s] [内存消耗：1,044.01kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000340s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001422s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000053s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/service?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.service',
+  'v' => '1606573435',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000256s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/service.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000030s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:55+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/service/index?addtabs=1&sort=custom_service_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573435254
+[运行时间：0.048397s] [吞吐率：20.66req/s] [内存消耗：907.16kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000143s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000309s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000045s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/service?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_service_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573435254',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000215s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/service.php
+[ info ] [ RUN ] app\admin\controller\custom\Service->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Service.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: custom_id[/home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Service.php:55]
+---------------------------------------------------------------
+[ 2020-11-28T22:23:56+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail?addtabs=1
+[运行时间：0.046716s] [吞吐率：21.41req/s] [内存消耗：764.53kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000095s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000414s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000051s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.sdetail',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000236s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/sdetail.php
+[ info ] [ RUN ] app\admin\controller\custom\Sdetail->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Sdetail.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/sdetail/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000039s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:56+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.sdetail&v=1606573436
+[运行时间：0.019554s] [吞吐率：51.14req/s] [内存消耗：1,044.11kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000157s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000279s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000040s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.sdetail',
+  'v' => '1606573436',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000163s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/sdetail.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000035s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:56+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail/index?addtabs=1&sort=custom_sdetail_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573436341
+[运行时间：0.094560s] [吞吐率：10.58req/s] [内存消耗：1,082.24kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000121s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000274s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000042s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.sdetail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_sdetail_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573436341',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000197s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/sdetail.php
+[ info ] [ RUN ] app\admin\controller\custom\Sdetail->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Sdetail.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000028s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:59+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/connect?addtabs=1
+[运行时间：0.169908s] [吞吐率：5.89req/s] [内存消耗：764.77kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000097s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000238s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000053s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.connect',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/connect?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000157s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/connect.php
+[ info ] [ RUN ] app\admin\controller\custom\Connect->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Connect.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/connect/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000099s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:59+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.connect&v=1606573439
+[运行时间：0.018643s] [吞吐率：53.64req/s] [内存消耗：1,044.35kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000163s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000361s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000054s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/connect?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.connect',
+  'v' => '1606573439',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000536s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/connect.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:23:59+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/connect/index?addtabs=1&sort=custom_connect_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573439288
+[运行时间：0.032228s] [吞吐率：31.03req/s] [内存消耗：1,101.49kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000093s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000209s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000028s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.connect',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/connect?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_connect_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573439288',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000135s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/connect.php
+[ info ] [ RUN ] app\admin\controller\custom\Connect->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Connect.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000026s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:00+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/purpose?addtabs=1
+[运行时间：0.050345s] [吞吐率：19.86req/s] [内存消耗：763.95kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000096s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000218s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000167s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.purpose',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/purpose?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000220s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/purpose.php
+[ info ] [ RUN ] app\admin\controller\custom\Purpose->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Purpose.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/purpose/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:00+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.purpose&v=1606573440
+[运行时间：0.015969s] [吞吐率：62.62req/s] [内存消耗：1,043.85kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000191s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000529s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000048s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/purpose?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.purpose',
+  'v' => '1606573440',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000317s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/purpose.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000027s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:00+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/purpose/index?addtabs=1&sort=custom_purpose_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573440356
+[运行时间：0.049277s] [吞吐率：20.29req/s] [内存消耗：1,060.37kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000126s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000291s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000042s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.purpose',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/purpose?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_purpose_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573440356',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000206s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/purpose.php
+[ info ] [ RUN ] app\admin\controller\custom\Purpose->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Purpose.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:01+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/remind?addtabs=1
+[运行时间：0.059911s] [吞吐率：16.69req/s] [内存消耗：764.23kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000124s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000317s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000046s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.remind',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/remind?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000206s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/remind.php
+[ info ] [ RUN ] app\admin\controller\custom\Remind->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Remind.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/remind/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000044s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:02+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.remind&v=1606573441
+[运行时间：0.019036s] [吞吐率：52.53req/s] [内存消耗：1,043.81kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000161s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000435s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000087s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/remind?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.remind',
+  'v' => '1606573441',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000267s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/remind.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000043s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:02+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/remind/index?addtabs=1&sort=custom_remind_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573442025
+[运行时间：0.046200s] [吞吐率：21.65req/s] [内存消耗：1,061.51kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000221s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000298s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000056s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.remind',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/remind?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_remind_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573442025',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000286s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/remind.php
+[ info ] [ RUN ] app\admin\controller\custom\Remind->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Remind.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000040s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:03+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/contact?addtabs=1
+[运行时间：0.059876s] [吞吐率：16.70req/s] [内存消耗：764.06kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000149s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000990s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000062s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.contact',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/contact?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000217s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/contact.php
+[ info ] [ RUN ] app\admin\controller\custom\Contact->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Contact.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/contact/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000042s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:03+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.contact&v=1606573443
+[运行时间：0.018431s] [吞吐率：54.26req/s] [内存消耗：1,043.96kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000145s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000341s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000233s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/contact?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.contact',
+  'v' => '1606573443',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000262s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/contact.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000031s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:03+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/contact/index?addtabs=1&sort=custom_contact_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573443282
+[运行时间：0.052865s] [吞吐率：18.92req/s] [内存消耗：1,079.96kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000121s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000272s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000040s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/contact?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_contact_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573443282',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000213s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/contact.php
+[ info ] [ RUN ] app\admin\controller\custom\Contact->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Contact.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000029s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:05+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail/index?addtabs=1&sort=custom_sdetail_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573436342
+[运行时间：0.031479s] [吞吐率：31.77req/s] [内存消耗：1,080.77kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000127s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000926s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000073s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.sdetail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_sdetail_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573436342',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000237s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/sdetail.php
+[ info ] [ RUN ] app\admin\controller\custom\Sdetail->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Sdetail.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000052s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:06+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail/index?addtabs=1&sort=custom_sdetail_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573436343
+[运行时间：0.026594s] [吞吐率：37.60req/s] [内存消耗：1,080.77kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000104s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000222s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000029s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.sdetail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/sdetail?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_sdetail_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573436343',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000142s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/sdetail.php
+[ info ] [ RUN ] app\admin\controller\custom\Sdetail->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Sdetail.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000027s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:07+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/documents?addtabs=1
+[运行时间：0.121963s] [吞吐率：8.20req/s] [内存消耗：763.95kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000130s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000328s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000051s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.documents',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/documents?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000227s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/documents.php
+[ info ] [ RUN ] app\admin\controller\custom\Documents->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Documents.php ]
+[ info ] [ VIEW ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/documents/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000038s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:08+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/ajax/lang?callback=define&controllername=custom.documents&v=1606573447
+[运行时间：0.022185s] [吞吐率：45.08req/s] [内存消耗：1,043.77kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000342s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000345s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000077s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/documents?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'custom.documents',
+  'v' => '1606573447',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000272s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/documents.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000048s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-11-28T22:24:08+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/documents/index?addtabs=1&sort=custom_documents_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573448037
+[运行时间：0.024572s] [吞吐率：40.70req/s] [内存消耗：903.49kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000273s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000044s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.documents',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/documents?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_documents_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573448037',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000197s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/documents.php
+[ info ] [ RUN ] app\admin\controller\custom\Documents->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Documents.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: custom_id[/home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Documents.php:54]
+---------------------------------------------------------------
+[ 2020-11-28T22:24:09+08:00 ] 127.0.0.1 GET 127.0.0.1:9001/WiGOXzphqV.php/custom/service/index?addtabs=1&sort=custom_service_id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1606573435255
+[运行时间：0.019032s] [吞吐率：52.54req/s] [内存消耗：907.16kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000123s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000240s ]
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000048s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'custom.service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=bd38075597f0d7417409a8d5',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9001/WiGOXzphqV.php/custom/service?addtabs=1',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36 Qaxbrowser',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1:9001',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'custom_service_id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1606573435255',
+)
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000152s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /home/www/admin/localhost_9001/wwwroot/public/../application/admin/lang/zh-cn/custom/service.php
+[ info ] [ RUN ] app\admin\controller\custom\Service->index[ /home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Service.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: custom_id[/home/www/admin/localhost_9001/wwwroot/application/admin/controller/custom/Service.php:55]

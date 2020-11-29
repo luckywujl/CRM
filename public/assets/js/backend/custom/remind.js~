@@ -5,12 +5,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'custom/sdetail/index' + location.search,
-                    add_url: 'custom/sdetail/add',
-                    edit_url: 'custom/sdetail/edit',
-                    del_url: 'custom/sdetail/del',
-                    multi_url: 'custom/sdetail/multi',
-                    table: 'custom_sdetail',
+                    index_url: 'custom/remind/index' + location.search,
+                    add_url: 'custom/remind/add',
+                    edit_url: 'custom/remind/edit',
+                    del_url: 'custom/remind/del',
+                    multi_url: 'custom/remind/multi',
+                    table: 'custom_remind',
                 }
             });
 
@@ -19,26 +19,20 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
-                pk: 'custom_sdetail_id',
-                sortName: 'custom_sdetail_id',
+                pk: 'custom_remind_id',
+                sortName: 'custom_remind_id',
                 columns: [
                     [
                         {checkbox: true},
-                        //{field: 'custom_sdetail_id', title: __('Custom_sdetail_id')},
+                        //{field: 'custom_remind_id', title: __('Custom_remind_id')},
                         {field: 'custominfo.custom_full_name', title: __('Custominfo.custom_full_name')},
                         {field: 'admin.nickname', title: __('Admin_id')},
-                        {field: 'custom_sdetail_time', title: __('Custom_sdetail_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'custom_sdetail_product', title: __('Custom_sdetail_product')},
-                        {field: 'custom_sdetail_price', title: __('Custom_sdetail_price'), operate:'BETWEEN'},
-								{field: 'custom_sdetail_unit', title: __('Custom_sdetail_unit')},                        
-                        {field: 'custom_sdetail_number', title: __('Custom_sdetail_number'), operate:'BETWEEN'},
-                        {field: 'custom_sdetail_deadline_time', title: __('Custom_sdetail_deadline_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'custom_sdetail_remark', title: __('Custom_sdetail_remark')},
+                        {field: 'custom_remind', title: __('Custom_remind')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        //{field: 'company_id', title: __('Company_id')},
-                       // {field: 'admin_id', title: __('Admin_id')},
-                       // {field: 'custom_id', title: __('Custom_id')},
+                        {field: 'company_id', title: __('Company_id')},
+                        {field: 'admin_id', title: __('Admin_id')},
+                        {field: 'custom_id', title: __('Custom_id')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
@@ -59,7 +53,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 初始化表格
             table.bootstrapTable({
-                url: 'custom/sdetail/recyclebin' + location.search,
+                url: 'custom/remind/recyclebin' + location.search,
                 pk: 'id',
                 sortName: 'id',
                 columns: [
@@ -85,7 +79,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                                     text: __('Restore'),
                                     classname: 'btn btn-xs btn-info btn-ajax btn-restoreit',
                                     icon: 'fa fa-rotate-left',
-                                    url: 'custom/sdetail/restore',
+                                    url: 'custom/remind/restore',
                                     refresh: true
                                 },
                                 {
@@ -93,7 +87,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                                     text: __('Destroy'),
                                     classname: 'btn btn-xs btn-danger btn-ajax btn-destroyit',
                                     icon: 'fa fa-times',
-                                    url: 'custom/sdetail/destroy',
+                                    url: 'custom/remind/destroy',
                                     refresh: true
                                 }
                             ],
