@@ -30,7 +30,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'custom_purpose_product', title: __('Custom_purpose_product')},
                         {field: 'custom_purpose_price', title: __('Custom_purpose_price'), operate:'BETWEEN'},
                         {field: 'custom_purpose_number', title: __('Custom_purpose_number'), operate:'BETWEEN'},
-                        {field: 'custom_purpose_time', title: __('Custom_purpose_time')},
+                        {field: 'custom_purpose_time', title: __('Custom_purpose_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'custom_purpose_remark', title: __('Custom_purpose_remark')},
                         {field: 'company_id', title: __('Company_id')},
                         {field: 'admin_id', title: __('Admin_id')},

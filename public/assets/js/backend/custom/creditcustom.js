@@ -269,6 +269,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'custom_sdetail_price', title: __('Custom_sdetail_price'), operate:'BETWEEN'},
                         {field: 'custom_sdetail_unit', title: __('Custom_sdetail_unit')},
                         {field: 'custom_sdetail_number', title: __('Custom_sdetail_number'), operate:'BETWEEN'},
+                        {field: 'custom_sdetail_amount', title: __('Custom_sdetail_amount'), operate:'BETWEEN'},
                         {field: 'custom_sdetail_deadline_time', title: __('Custom_sdetail_deadline_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'custom_sdetail_remark', title: __('Custom_sdetail_remark')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},

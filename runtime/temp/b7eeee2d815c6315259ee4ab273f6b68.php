@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:95:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/payment/add.html";i:1605454068;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:95:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/payment/add.html";i:1610029909;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -52,16 +52,16 @@
                             <div class="content">
                                 <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
-    <div class="form-group" visibility: hidden>
+    <div class="form-group" <?php echo input('?custom_id')?'visibility: hidden':''; ?> >
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_id" data-rule="required" class="form-control" name="row[custom_id]" type="text" value="<?php echo htmlentities($custom_id); ?>">
+            <input id="c-custom_id" data-rule="required" data-source="custom/mycustom/index" data-field="custom_full_name" data-primary-key="custom_id" class="form-control selectpage" name="row[custom_id]" type="text" value="<?php echo htmlentities($custom_id); ?>">
         </div>
-    </div>     
+    </div>    
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_payment_content1'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_payment_content1" class="form-control" name="row[custom_payment_content1]" type="text">
+            <input id="c-custom_payment_content1" data-rule="required" data-source="base/paymentcontent/index" data-field="payment_content" data-primary-key="payment_content" class="form-control selectpage" name="row[custom_payment_content1]" type="text">
         </div>
     </div>
     <div class="form-group">
@@ -97,13 +97,13 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_payment_method'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_payment_method" class="form-control" name="row[custom_payment_method]" type="text">
+            <input id="c-custom_payment_method" data-source = "base/paymentmethod/index" data-field = "payment_method" data-primary-key = "payment_method" class="form-control selectpage" name="row[custom_payment_method]" type="text">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_payment_type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_payment_type" class="form-control" name="row[custom_payment_type]" type="text">
+            <input id="c-custom_payment_type" data-source = "base/paymenttype/index" data-field = "payment_type" data-primary-key = "payment_type" class="form-control selectpage" name="row[custom_payment_type]" type="text">
         </div>
     </div>
     <div class="form-group">

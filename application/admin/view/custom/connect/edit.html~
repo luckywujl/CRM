@@ -21,19 +21,19 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_connect_promotion')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_connect_promotion" class="form-control" name="row[custom_connect_promotion]" type="text" value="{$row.custom_connect_promotion|htmlentities}">
+            <input id="c-custom_connect_promotion" data-source="base/promotion/index" data-field="promotion" data-primary-key="promotion" class="form-control selectpage" name="row[custom_connect_promotion]" type="text" value="{$row.custom_connect_promotion|htmlentities}">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_connect_rating')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_connect_rating" class="form-control" name="row[custom_connect_rating]" type="text" value="{$row.custom_connect_rating|htmlentities}">
+            <input id="c-custom_connect_rating" data-source="base/rating/index" data-field="rating" data-primary-key="rating" class="form-control selectpage" name="row[custom_connect_rating]" type="text" value="{$row.custom_connect_rating|htmlentities}">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_connect_communic')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_connect_communic" class="form-control" name="row[custom_connect_communic]" type="text" value="{$row.custom_connect_communic|htmlentities}">
+            <input id="c-custom_connect_communic" data-source = "base/communic/index" data-field = "communic" data-primary-key = "communic" class="form-control selectpage" name="row[custom_connect_communic]" type="text" value="{$row.custom_connect_communic|htmlentities}">
         </div>
     </div>
     <div class="form-group">

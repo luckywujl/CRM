@@ -3,7 +3,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_content1')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_payment_content1" class="form-control" name="row[custom_payment_content1]" type="text" value="{$row.custom_payment_content1|htmlentities}">
+            <input id="c-custom_payment_content1" data-rule="required" data-source="base/paymentcontent/index" data-field="payment_content" data-primary-key="payment_content" class="form-control selectpage" name="row[custom_payment_content1]" type="text" value="{$row.custom_payment_content1|htmlentities}">
         </div>
     </div>
     <div class="form-group">
@@ -39,13 +39,13 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_method')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_payment_method" class="form-control" name="row[custom_payment_method]" type="text" value="{$row.custom_payment_method|htmlentities}">
+            <input id="c-custom_payment_method" data-source = "base/paymentmethod/index" data-field = "payment_method" data-primary-key = "payment_method" class="form-control selectpage" name="row[custom_payment_method]" type="text" value="{$row.custom_payment_method|htmlentities}">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_payment_type')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_payment_type" class="form-control" name="row[custom_payment_type]" type="text" value="{$row.custom_payment_type|htmlentities}">
+            <input id="c-custom_payment_type" data-source = "base/paymenttype/index" data-field = "payment_type" data-primary-key = "payment_type" class="form-control selectpage" name="row[custom_payment_type]" type="text" value="{$row.custom_payment_type|htmlentities}">
         </div>
     </div>
     <div class="form-group">

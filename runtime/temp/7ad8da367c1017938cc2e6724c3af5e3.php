@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/mycustom/add.html";i:1605913844;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/mycustom/add.html";i:1609425983;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -59,11 +59,11 @@
         </div>
     
         <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_promotion_type'); ?>:</label>
-        <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-1 col-sm-2">
             <input id="c-custom_promotion_type" data-source="base/promotion/index" data-field="promotion" data-primary-key="promotion" class="form-control selectpage" name="row[custom_promotion_type]" type="text" value="">
         </div>
    
-        <label class="control-label col-xs-1 col-sm-2"><?php echo __('Custom_type'); ?>:</label>
+        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_type'); ?>:</label>
         <div class="col-xs-1 col-sm-1">
             <input id="c-custom_type"  data-source="base/customtype/index" data-field="customtype" data-primary-key="customtype" class="form-control selectpage" name="row[custom_type]"  value="">
         </div>
@@ -85,11 +85,11 @@
         </div>
     
         <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_online_status'); ?>:</label>
-        <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-1 col-sm-2">
             <input id="c-custom_online_status" data-source="base/onlinestatus/index" data-field="custom_online_status_name" data-primary-key="custom_online_status_name" class="form-control selectpage" name="row[custom_online_status]" type="text" value="">
         </div>
         
-        <label class="control-label col-xs-1 col-sm-2"><?php echo __('Custom_operation_person'); ?>:</label>
+        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_operation_person'); ?>:</label>
         <div class="col-xs-1 col-sm-1">
             <input id="c-custom_operation_person" class="form-control" name="row[custom_operation_person]" type="text" value="">
         </div>
@@ -111,11 +111,11 @@
         </div>
     
         <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_security_master_phone'); ?>:</label>
-        <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-1 col-sm-2">
             <input id="c-custom_security_master_phone" class="form-control" name="row[custom_security_master_phone]" type="text" value="">
         </div>
     
-        <label class="control-label col-xs-1 col-sm-2"><?php echo __('Custom_security_sub_phone'); ?>:</label>
+        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_security_sub_phone'); ?>:</label>
         <div class="col-xs-1 col-sm-1">
             <input id="c-custom_security_sub_phone" class="form-control" name="row[custom_security_sub_phone]" type="text" value="">
         </div>
@@ -137,11 +137,11 @@
         </div>
     
         <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_pc_website'); ?>:</label>
-        <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-1 col-sm-2">
             <input id="c-custom_pc_website" class="form-control" name="row[custom_pc_website]" type="text" value="">
         </div>
    
-        <label class="control-label col-xs-1 col-sm-2"><?php echo __('Custom_website_code'); ?>:</label>
+        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_website_code'); ?>:</label>
         <div class="col-xs-1 col-sm-1">
             <input id="c-custom_website_code" class="form-control" name="row[custom_website_code]" type="text" value="">
         </div>
@@ -163,11 +163,11 @@
         </div>
     
         <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_full_name'); ?>:</label>
-        <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-1 col-sm-2">
             <input id="c-custom_full_name" data-rule="required" class="form-control" name="row[custom_full_name]" type="text" value="">
         </div>
     
-        <label class="control-label col-xs-1 col-sm-2"><?php echo __('Custom_baidu_id'); ?>:</label>
+        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_baidu_id'); ?>:</label>
         <div class="col-xs-1 col-sm-1">
             <input id="c-custom_baidu_id"   class="form-control " name="row[custom_baidu_id]" type="text" value="">
         </div>

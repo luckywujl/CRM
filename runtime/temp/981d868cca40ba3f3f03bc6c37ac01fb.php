@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/connect/edit.html";i:1606229705;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/connect/edit.html";i:1610030585;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -52,6 +52,12 @@
                             <div class="content">
                                 <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
+    <div class="form-group" >
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_name" readonly="readonly" data-rule="required" class="form-control" name="custom_name" type="text" value="<?php echo htmlentities($row['custominfo']['custom_full_name']); ?>">
+        </div>
+    </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_connect_time'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
@@ -73,19 +79,19 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_connect_promotion'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_connect_promotion" class="form-control" name="row[custom_connect_promotion]" type="text" value="<?php echo htmlentities($row['custom_connect_promotion']); ?>">
+            <input id="c-custom_connect_promotion" data-source="base/promotion/index" data-field="promotion" data-primary-key="promotion" class="form-control selectpage" name="row[custom_connect_promotion]" type="text" value="<?php echo htmlentities($row['custom_connect_promotion']); ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_connect_rating'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_connect_rating" class="form-control" name="row[custom_connect_rating]" type="text" value="<?php echo htmlentities($row['custom_connect_rating']); ?>">
+            <input id="c-custom_connect_rating" data-source="base/rating/index" data-field="rating" data-primary-key="rating" class="form-control selectpage" name="row[custom_connect_rating]" type="text" value="<?php echo htmlentities($row['custom_connect_rating']); ?>">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_connect_communic'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_connect_communic" class="form-control" name="row[custom_connect_communic]" type="text" value="<?php echo htmlentities($row['custom_connect_communic']); ?>">
+            <input id="c-custom_connect_communic" data-source = "base/communic/index" data-field = "communic" data-primary-key = "communic" class="form-control selectpage" name="row[custom_connect_communic]" type="text" value="<?php echo htmlentities($row['custom_connect_communic']); ?>">
         </div>
     </div>
     <div class="form-group">

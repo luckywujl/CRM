@@ -24,7 +24,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'custom_bill_id', title: __('Custom_bill_id')},
+                        //{field: 'custom_bill_id', title: __('Custom_bill_id')},
+                        {field: 'custominfo.custom_full_name', title: __('Custominfo.custom_full_name')},
+                        {field: 'admin.nickname', title: __('Admin_id')},
                         {field: 'custom_bill_time', title: __('Custom_bill_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'custom_bill_content', title: __('Custom_bill_content')},
                         {field: 'custom_bill_type', title: __('Custom_bill_type')},
@@ -35,9 +37,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'custom_bill_remark', title: __('Custom_bill_remark')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'company_id', title: __('Company_id')},
-                        {field: 'admin_id', title: __('Admin_id')},
-                        {field: 'custom_id', title: __('Custom_id')},
+                        //{field: 'company_id', title: __('Company_id')},
+                       // {field: 'admin_id', title: __('Admin_id')},
+                       // {field: 'custom_id', title: __('Custom_id')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
@@ -59,12 +61,20 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格
             table.bootstrapTable({
                 url: 'custom/bill/recyclebin' + location.search,
-                pk: 'id',
-                sortName: 'id',
+                pk: 'custom_bill_id',
+                sortName: 'custom_bill_id',
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
+                        {field: 'custom_bill_time', title: __('Custom_bill_time'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'custom_bill_content', title: __('Custom_bill_content')},
+                        {field: 'custom_bill_type', title: __('Custom_bill_type')},
+                        {field: 'custom_bill_order', title: __('Custom_bill_order')},
+                        {field: 'custom_bill_account', title: __('Custom_bill_account'), operate:'BETWEEN'},
+                        {field: 'custom_bill_person', title: __('Custom_bill_person')},
+                        {field: 'custom_bill_payment_method', title: __('Custom_bill_payment_method')},
+                        {field: 'custom_bill_remark', title: __('Custom_bill_remark')},
+                        
                         {
                             field: 'deletetime',
                             title: __('Deletetime'),

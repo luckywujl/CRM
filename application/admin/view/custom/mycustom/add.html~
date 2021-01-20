@@ -7,11 +7,11 @@
         </div>
     
         <label class="control-label col-xs-1 col-sm-1">{:__('Custom_promotion_type')}:</label>
-        <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-1 col-sm-2">
             <input id="c-custom_promotion_type" data-source="base/promotion/index" data-field="promotion" data-primary-key="promotion" class="form-control selectpage" name="row[custom_promotion_type]" type="text" value="">
         </div>
    
-        <label class="control-label col-xs-1 col-sm-2">{:__('Custom_type')}:</label>
+        <label class="control-label col-xs-1 col-sm-1">{:__('Custom_type')}:</label>
         <div class="col-xs-1 col-sm-1">
             <input id="c-custom_type"  data-source="base/customtype/index" data-field="customtype" data-primary-key="customtype" class="form-control selectpage" name="row[custom_type]"  value="">
         </div>
@@ -33,11 +33,11 @@
         </div>
     
         <label class="control-label col-xs-1 col-sm-1">{:__('Custom_online_status')}:</label>
-        <div class="col-xs-1 col-sm-1">
+        <div class="col-xs-1 col-sm-2">
             <input id="c-custom_online_status" data-source="base/onlinestatus/index" data-field="custom_online_status_name" data-primary-key="custom_online_status_name" class="form-control selectpage" name="row[custom_online_status]" type="text" value="">
         </div>
         
-        <label class="control-label col-xs-1 col-sm-2">{:__('Custom_operation_person')}:</label>
+        <label class="control-label col-xs-1 col-sm-1">{:__('Custom_operation_person')}:</label>
         <div class="col-xs-1 col-sm-1">
             <input id="c-custom_operation_person" class="form-control" name="row[custom_operation_person]" type="text" value="">
         </div>

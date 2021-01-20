@@ -14,5 +14,7 @@ return [
     'Deletetime'              => '删除时间',
     'Company_id'              => '数据归属',
     'Admin_id'                => '归属人',
-    'Custom_id'               => '客户ID'
+    'Custom_id'               => '客户ID',
+    'Custominfo.custom_full_name' => '客户全称',
+     'Admin.nickname'              => '昵称'
 ];

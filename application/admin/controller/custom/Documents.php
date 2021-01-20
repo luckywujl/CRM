@@ -40,6 +40,8 @@ class Documents extends Backend
      */
     public function index()
     {
+      	//当前是否为关联查询
+        $this->relationSearch = true;
     	  $params = $this->request->param();
         //设置过滤方法
         $this->request->filter(['strip_tags']);
@@ -49,23 +51,47 @@ class Documents extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+            if(input('?custom_id')) {
             $total = $this->model
+                ->with(['custominfo','admin'])
                 ->where($where)
-					 ->where('custom_id',$params['custom_id'])
+					 ->where('documents.custom_id',$params['custom_id'])
+					 //->where('admin_id',$this->auth->id)
                 ->order($sort, $order)
                 ->count();
 
             $list = $this->model
+                ->with(['custominfo','admin'])
                 ->where($where)
-                ->where('custom_id',$params['custom_id'])
+                ->where('documents.custom_id',$params['custom_id'])
+                //->where('admin_id',$this->auth->id)
                 ->order($sort, $order)
                 ->limit($offset, $limit)
                 ->select();
+             }else {
+             	$total = $this->model
+					 ->with(['custominfo','admin'])
+                ->where($where)
+					 ->where('admin.id',$this->auth->id)
+					 
+                ->order($sort, $order)
+                ->count();
+
+            $list = $this->model
+                ->with(['custominfo','admin'])
+                ->where($where)
+                ->where('admin.id',$this->auth->id)
+                ->order($sort, $order)
+                ->limit($offset, $limit)
+                ->select();
+             }
+            
 
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);
+        
         }
         return $this->view->fetch('index');
     }

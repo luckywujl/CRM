@@ -156,6 +156,7 @@ class Mycustom extends Backend
             if ($params) {
                 $params = $this->preExcludeFields($params);
                 $result = false;
+                
                 Db::startTrans();
                 try {
                     //是否采用模型验证
@@ -164,7 +165,9 @@ class Mycustom extends Backend
                         $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.edit' : $name) : $this->modelValidate;
                         $row->validateFailException(true)->validate($validate);
                     }
+                   
                     $result = $row->allowField(true)->save($params);
+                     
                     Db::commit();
                 } catch (ValidateException $e) {
                     Db::rollback();

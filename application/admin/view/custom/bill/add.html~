@@ -1,11 +1,11 @@
 <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
-    <div class="form-group" visibility: hidden>
+     <div class="form-group" {:input('?custom_id')?'visibility: hidden':''} >
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_id')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_id" data-rule="required" class="form-control" name="row[custom_id]" type="text" value="{$custom_id|htmlentities}">
+            <input id="c-custom_id" data-rule="required" data-source="custom/mycustom/index" data-field="custom_full_name" data-primary-key="custom_id" class="form-control selectpage" name="row[custom_id]" type="text" value="{$custom_id|htmlentities}">
         </div>
-    </div>     
+    </div>      
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_time')}:</label>
         <div class="col-xs-12 col-sm-8">
@@ -21,7 +21,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_bill_type')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_bill_type" class="form-control" name="row[custom_bill_type]" type="text">
+            <input id="c-custom_bill_type" data-source = "base/billtype/index" data-field = "bill_type" data-primay-key = "bill_type" class="form-control selectpage" name="row[custom_bill_type]" type="text">
         </div>
     </div>
     <div class="form-group">

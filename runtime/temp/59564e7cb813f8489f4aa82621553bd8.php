@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:101:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/creditcustom/edit.html";i:1605540347;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:101:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/creditcustom/edit.html";i:1609419094;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -194,7 +194,7 @@
     
     
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_credit_type'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-1"><?php echo __('Custom_credit_type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
                         
             <select  id="c-custom_credit_type" class="form-control selectpicker" name="row[custom_credit_type]">
@@ -205,19 +205,9 @@
 
         </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Company_id'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-company_id" data-rule="required" data-source="company/index" class="form-control selectpage" name="row[company_id]" type="text" value="<?php echo htmlentities($row['company_id']); ?>">
-        </div>
-    </div>
     
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custominfo.custom_full_name'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-custom_admin" class="form-control" name="row[custominfo.custom_full_name]" type="text" value="<?php echo htmlentities($row['custominfo']['custom_full_name']); ?>">
-        </div>
-    </div>
+    
+    
     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=30>
     <a href="#contact">客户联系人</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="#remind">客户提醒</a> &nbsp; &nbsp; &nbsp; &nbsp;<a href="#purpose">客户意向</a> &nbsp; &nbsp; &nbsp; &nbsp;<a href="#connect">沟通记录</a>  &nbsp; &nbsp; &nbsp; &nbsp;<a href="#sdetail">销售信息</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="#ddetail">发货信息</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="#service">售后服务</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="#payment">款项信息</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="#bill">票据信息</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="#documents">客户文档</a>
     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=30>

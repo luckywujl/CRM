@@ -7,6 +7,7 @@ return [
     'Custom_sdetail_price'         => '单价',
     'Custom_sdetail_unit'          => '单位',
     'Custom_sdetail_number'        => '数量',
+    'Custom_sdetail_amount'        => '金额',
     'Custom_sdetail_deadline_time' => '合同到期',
     'Custom_sdetail_remark'        => '备注',
     'Createtime'                   => '创建时间',
