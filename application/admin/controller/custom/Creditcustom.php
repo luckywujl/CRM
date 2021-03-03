@@ -76,6 +76,7 @@ class Creditcustom extends Backend
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
+            
             return json($result);
         }
         return $this->view->fetch();
@@ -133,6 +134,8 @@ class Creditcustom extends Backend
         }
         $this->view->assign("row", $row);
         $this->assignconfig('row', $row);
+        $this->assignconfig('sdetail_total',$row[0]['custominfo.custom_sale_total']);
+        $this->assignconfig('payment_total',$row[0]['custominfo.custom_payment_total']);
         return $this->view->fetch();
     }
 

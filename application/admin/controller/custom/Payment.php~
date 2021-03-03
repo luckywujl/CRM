@@ -4,7 +4,7 @@ namespace app\admin\controller\custom;
 
 use app\common\controller\Backend;
 use think\Db;
-
+use app\admin\model\custom as custom;
 /**
  * 款项信息
  *
@@ -99,7 +99,9 @@ class Payment extends Backend
      */
     public function add()
     {
-    	
+    	list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+    	$sdetail = new custom\Sdetail();
+    	$custom = new custom\Info();
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if ($params) {
@@ -123,6 +125,23 @@ class Payment extends Backend
                         $this->model->validateFailException(true)->validate($validate);
                     }
                     $result = $this->model->allowField(true)->save($params);
+                    $custom_id = $this->model->custom_id;//获取刚刚添加的数据之custom_id,便于后面汇总
+                    //加入汇总部份
+                    $sale_total = $sdetail
+                    						->field('sum(custom_sdetail_amount) as amount')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->select();
+                    	$payment_total = $this->model
+                    						->field('sum(custom_payment_account) as account')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->select();
+                    	$result = $custom
+                    					->where($where)
+                    					->where('custom_id',$custom_id)
+                    					->update(['custom_sale_total'=>$sale_total[0]['amount'],'custom_payment_total'=>$payment_total[0]['account'],'custom_payable_total'=>$sale_total[0]['amount']-$payment_total[0]['account']]);
+                    	
                     Db::commit();
                 } catch (ValidateException $e) {
                     Db::rollback();

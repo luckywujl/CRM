@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:92:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/dashboard/index.html";i:1588765310;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:92:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/dashboard/index.html";i:1614786667;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -207,7 +207,7 @@
         <?php echo build_heading(null, false); ?>
         <ul class="nav nav-tabs">
             <li class="active"><a href="#one" data-toggle="tab"><?php echo __('Dashboard'); ?></a></li>
-            <li><a href="#two" data-toggle="tab"><?php echo __('Custom'); ?></a></li>
+            
         </ul>
     </div>
     <div class="panel-body">
@@ -220,7 +220,7 @@
                             <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>
                             <div class="sm-st-info">
                                 <span><?php echo $totaluser; ?></span>
-                                <?php echo __('Total user'); ?>
+                                <?php echo __('总客户数'); ?>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                             <span class="sm-st-icon st-violet"><i class="fa fa-book"></i></span>
                             <div class="sm-st-info">
                                 <span><?php echo $totalviews; ?></span>
-                                <?php echo __('Total view'); ?>
+                                <?php echo __('销售总额'); ?>
                             </div>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
                             <span class="sm-st-icon st-blue"><i class="fa fa-shopping-bag"></i></span>
                             <div class="sm-st-info">
                                 <span><?php echo $totalorder; ?></span>
-                                <?php echo __('Total order'); ?>
+                                <?php echo __('已付款项'); ?>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                             <span class="sm-st-icon st-green"><i class="fa fa-cny"></i></span>
                             <div class="sm-st-info">
                                 <span><?php echo $totalorderamount; ?></span>
-                                <?php echo __('Total order amount'); ?>
+                                <?php echo __('待付款项'); ?>
                             </div>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                                         <div class="stat-icon"><i class="fa fa-rocket"></i></div>
                                         <div class="stat">
                                             <div class="value"> <?php echo $todayusersignup; ?></div>
-                                            <div class="name"> <?php echo __('Today user signup'); ?></div>
+                                            <div class="name"> <?php echo __('今日新增客户'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 30%"></div>
@@ -275,7 +275,7 @@
                                         <div class="stat-icon"><i class="fa fa-shopping-cart"></i></div>
                                         <div class="stat">
                                             <div class="value"> <?php echo $todayuserlogin; ?></div>
-                                            <div class="name"> <?php echo __('Today user login'); ?></div>
+                                            <div class="name"> <?php echo __('今日销售（元）'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -285,7 +285,7 @@
                                         <div class="stat-icon"><i class="fa fa-line-chart"></i></div>
                                         <div class="stat">
                                             <div class="value"> <?php echo $todayorder; ?></div>
-                                            <div class="name"> <?php echo __('Today order'); ?></div>
+                                            <div class="name"> <?php echo __('今日销售笔数'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -295,7 +295,7 @@
                                         <div class="stat-icon"><i class="fa fa-users"></i></div>
                                         <div class="stat">
                                             <div class="value"> <?php echo $unsettleorder; ?></div>
-                                            <div class="name"> <?php echo __('Unsettle order'); ?></div>
+                                            <div class="name"> <?php echo __('今日销售金额（元）'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -305,7 +305,7 @@
                                         <div class="stat-icon"><i class="fa fa-list-alt"></i></div>
                                         <div class="stat">
                                             <div class="value"> <?php echo $sevendnu; ?></div>
-                                            <div class="name"> <?php echo __('Seven dnu'); ?></div>
+                                            <div class="name"> <?php echo __('今日沟通（次）'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -315,7 +315,7 @@
                                         <div class="stat-icon"><i class="fa fa-dollar"></i></div>
                                         <div class="stat">
                                             <div class="value"> <?php echo $sevendau; ?></div>
-                                            <div class="name"> <?php echo __('Seven dau'); ?></div>
+                                            <div class="name"> <?php echo __('今日回款(元)'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -336,12 +336,11 @@
                             <div class="panel-body">
                                 <div class="panel-title">
                                     <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Category count'); ?></h5>
+                                    <h5><?php echo __('今日意向'); ?></h5>
                                 </div>
                                 <div class="panel-content">
-                                    <h1 class="no-margins">1234</h1>
-                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-commenting"></i> 1234</div>
-                                    <small><?php echo __('Category count tips'); ?></small>
+                                    <h1 class="no-margins"><?php echo $purpose_today; ?></h1>
+                                   <small><?php echo __('今日意向客户总数'); ?></small>
                                 </div>
                             </div>
                         </div>
@@ -351,11 +350,10 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Attachment count'); ?></h5>
+                                    <h5><?php echo __('文档数量'); ?></h5>
                                 </div>
                                 <div class="ibox-content">
-                                    <h1 class="no-margins">1043</h1>
-                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-modx"></i> 2592</div>
+                                    <h1 class="no-margins"><?php echo $documents_total; ?></h1>
                                     <small><?php echo __('Attachment count tips'); ?></small>
                                 </div>
                             </div>
@@ -367,21 +365,21 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Article count'); ?></h5>
+                                    <h5><?php echo __('售后次数'); ?></h5>
                                 </div>
                                 <div class="ibox-content">
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">1234</h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small><?php echo __('Comment count'); ?></small>
+                                            <h1 class="no-margins"><?php echo $service_today; ?></h1>
+                                            <div class="font-bold">
+                                                <small><?php echo __('今日售后'); ?></small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">6754</h1>
+                                            <h1 class="no-margins"><?php echo $service_total; ?></h1>
                                             <div class="font-bold"><i class="fa fa-heart"></i>
-                                                <small><?php echo __('Like count'); ?></small>
+                                                <small><?php echo __('累计售后'); ?></small>
                                             </div>
                                         </div>
                                     </div>
@@ -394,21 +392,21 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('News count'); ?></h5>
+                                    <h5><?php echo __('客户提醒'); ?></h5>
                                 </div>
                                 <div class="ibox-content">
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">5302</h1>
+                                            <h1 class="no-margins"><?php echo $remind_today; ?></h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small><?php echo __('Comment count'); ?></small>
+                                                <small><?php echo __('今日提醒'); ?></small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">8205</h1>
+                                            <h1 class="no-margins"><?php echo $remind_total; ?></h1>
                                             <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small><?php echo __('Like count'); ?></small>
+                                                <small><?php echo __('累计提醒'); ?></small>
                                             </div>
                                         </div>
                                     </div>

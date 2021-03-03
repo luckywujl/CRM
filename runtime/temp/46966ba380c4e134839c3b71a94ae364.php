@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:93:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/info/edit.html";i:1605278802;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:93:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/info/edit.html";i:1614642821;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -151,9 +151,9 @@
             <input id="c-custom_copyright" class="form-control" name="row[custom_copyright]" type="text" value="<?php echo htmlentities($row['custom_copyright']); ?>">
         </div>
     
-        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custom_payment_detail'); ?>:</label>
+        <label class="control-label col-xs-1 col-sm-1"><?php echo __('custom_payable_total'); ?>:</label>
         <div class="col-xs-1 col-sm-1">
-            <input id="c-custom_payment_detail" class="form-control" name="row[custom_payment_detail]" type="text" value="<?php echo htmlentities($row['custom_payment_detail']); ?>">
+            <input id="c-custom_payable_total" class="form-control" name="row[custom_payable_total]" type="text" value="<?php echo htmlentities($row['custom_payable_total']); ?>">
         </div>
     </div>
     <div class="form-group">

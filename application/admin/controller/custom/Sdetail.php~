@@ -4,6 +4,7 @@ namespace app\admin\controller\custom;
 
 use app\common\controller\Backend;
 use think\Db;
+use app\admin\model\custom as custom;
 
 /**
  * 销售信息
@@ -98,7 +99,9 @@ class Sdetail extends Backend
      */
     public function add()
     {
-    	
+    	list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+    	$payment = new custom\Payment();
+    	$custom = new custom\Info();
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if ($params) {
@@ -123,6 +126,24 @@ class Sdetail extends Backend
                     }
                     $result = $this->model->allowField(true)->save($params);
                     Db::commit();
+                    $custom_id = $this->model->custom_id;//获取刚刚添加的数据之custom_id,便于后面汇总
+                    //加入汇总部份
+                    $sale_total = $this->model
+                    						->field('sum(custom_sdetail_amount) as amount')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->select();
+                    	$payment_total = $payment
+                    						->field('sum(custom_payment_account) as account')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->select();
+                    	$result = $custom
+                    					->where($where)
+                    					->where('custom_id',$custom_id)
+                    					->update(['custom_sale_total'=>$sale_total[0]['amount'],'custom_payment_total'=>$payment_total[0]['account'],'custom_payable_total'=>$sale_total[0]['amount']-$payment_total[0]['account']]);
+                    					
+                    
                 } catch (ValidateException $e) {
                     Db::rollback();
                     $this->error($e->getMessage());
@@ -146,5 +167,196 @@ class Sdetail extends Backend
         	$this->assign('custom_id',$this->request->param("custom_id")); 
          return $this->view->fetch();
     }
+     /**
+     * 编辑
+     */
+    public function edit($ids = null)
+    {
+    	list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+    	$payment = new custom\Payment();
+    	$custom = new custom\Info();
+        $row = $this->model->get($ids);
+        if (!$row) {
+            $this->error(__('No Results were found'));
+        }
+        $adminIds = $this->getDataLimitAdminIds();
+        if (is_array($adminIds)) {
+            if (!in_array($row[$this->dataLimitField], $adminIds)) {
+                $this->error(__('You have no permission'));
+            }
+        }
+        if ($this->request->isPost()) {
+            $params = $this->request->post("row/a");
+            $custom_id = $this->request->post("custom_id");
+            
+            if ($params) {
+            	
+                $params = $this->preExcludeFields($params);
+                $result = false;
+                Db::startTrans();
+                try {
+                    //是否采用模型验证
+                    if ($this->modelValidate) {
+                        $name = str_replace("\\model\\", "\\validate\\", get_class($this->model));
+                        $validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.edit' : $name) : $this->modelValidate;
+                        $row->validateFailException(true)->validate($validate);
+                    }
+                    $result = $row->allowField(true)->save($params);
+                    //获取刚刚添加的数据之custom_id,便于后面汇总
+                    //加入汇总部份
+                    $sale_total = $this->model
+                    						->field('sum(custom_sdetail_amount) as amount')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->select();
+                    	$payment_total = $payment
+                    						->field('sum(custom_payment_account) as account')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->select();
+                    	$result = $custom
+                    					->where($where)
+                    					->where('custom_id',$custom_id)
+                    					->update(['custom_sale_total'=>$sale_total[0]['amount'],'custom_payment_total'=>$payment_total[0]['account'],'custom_payable_total'=>$sale_total[0]['amount']-$payment_total[0]['account']]);
+                    	
+                    Db::commit();
+                } catch (ValidateException $e) {
+                    Db::rollback();
+                    $this->error($e->getMessage());
+                } catch (PDOException $e) {
+                    Db::rollback();
+                    $this->error($e->getMessage());
+                } catch (Exception $e) {
+                    Db::rollback();
+                    $this->error($e->getMessage());
+                }
+                if ($result !== false) {
+                    $this->success('OK!',null,$custom_id);
+                } else {
+                    $this->error(__('No rows were updated'));
+                }
+            }
+            $this->error(__('Parameter %s can not be empty', ''));
+        }
+        $this->view->assign("row", $row);
+        return $this->view->fetch();
+    }
+
+    /**
+     * 删除
+     */
+    public function del($ids = "")
+    {
+        if ($ids) {
+          	list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+         	$payment = new custom\Payment();
+         	$custom = new custom\Info();
+            $pk = $this->model->getPk();
+            $adminIds = $this->getDataLimitAdminIds();
+            if (is_array($adminIds)) {
+                $this->model->where($this->dataLimitField, 'in', $adminIds);
+            }
+            $list = $this->model->where($pk, 'in', $ids)->select();
+
+            $count = 0;
+            Db::startTrans();
+            try {
+                foreach ($list as $k => $v) {
+                	$custom_id = $v['custom_id'];
+                	$count += $v->delete();
+                	//加入汇总部份
+                    $sale_total = $this->model
+                    						->field('sum(custom_sdetail_amount) as amount')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->where('deletetime',NULL)
+                    						->select();
+                    	$payment_total = $payment
+                    						->field('sum(custom_payment_account) as account')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->where('deletetime',NULL)
+                    						->select();
+                    	$result = $custom
+                    					->where($where)
+                    					->where('custom_id',$custom_id)
+                    					->update(['custom_sale_total'=>$sale_total[0]['amount'],'custom_payment_total'=>$payment_total[0]['account'],'custom_payable_total'=>$sale_total[0]['amount']-$payment_total[0]['account']]);
+                    	
+                    
+                    
+                }
+                Db::commit();
+            } catch (PDOException $e) {
+                Db::rollback();
+                $this->error($e->getMessage());
+            } catch (Exception $e) {
+                Db::rollback();
+                $this->error($e->getMessage());
+            }
+            if ($count) {
+                $this->success($custom_id);
+            } else {
+                $this->error(__('No rows were deleted'));
+            }
+        }
+        $this->error(__('Parameter %s can not be empty', 'ids'));
+    }
+    
+    /**
+     * 还原
+     */
+    public function restore($ids = "")
+    {
+        $pk = $this->model->getPk();
+        $adminIds = $this->getDataLimitAdminIds();
+        if (is_array($adminIds)) {
+            $this->model->where($this->dataLimitField, 'in', $adminIds);
+        }
+        if ($ids) {
+            $this->model->where($pk, 'in', $ids);
+        }
+        $count = 0;
+        list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+         	$payment = new custom\Payment();
+         	$custom = new custom\Info();
+        Db::startTrans();
+        try {
+            $list = $this->model->onlyTrashed()->select();
+            foreach ($list as $index => $item) {
+             	$custom_id = $item['custom_id'];
+                $count += $item->restore();
+               //加入汇总部份
+                    $sale_total = $this->model
+                    						->field('sum(custom_sdetail_amount) as amount')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->where('deletetime',NULL)
+                    						->select();
+                    	$payment_total = $payment
+                    						->field('sum(custom_payment_account) as account')
+                    						->where($where)
+                    						->where('custom_id',$custom_id)
+                    						->where('deletetime',NULL)
+                    						->select();
+                    	$result = $custom
+                    					->where($where)
+                    					->where('custom_id',$custom_id)
+                    					->update(['custom_sale_total'=>$sale_total[0]['amount'],'custom_payment_total'=>$payment_total[0]['account'],'custom_payable_total'=>$sale_total[0]['amount']-$payment_total[0]['account']]);
+                    	 
+            }
+            Db::commit();
+        } catch (PDOException $e) {
+            Db::rollback();
+            $this->error($e->getMessage());
+        } catch (Exception $e) {
+            Db::rollback();
+            $this->error($e->getMessage());
+        }
+        if ($count) {
+            $this->success();
+        }
+        $this->error(__('No rows were updated'));
+    }
+
 
 }

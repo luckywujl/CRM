@@ -99,9 +99,9 @@
             <input id="c-custom_copyright" class="form-control" readonly="readonly" name="row[custominfo.custom_copyright]" type="text" value="{$row.custominfo.custom_copyright|htmlentities}">
         </div>
     
-        <label class="control-label col-xs-1 col-sm-1">{:__('Custominfo.custom_payment_detail')}:</label>
+        <label class="control-label col-xs-1 col-sm-1">{:__('Custominfo.custom_payable_total')}:</label>
         <div class="col-xs-1 col-sm-1">
-            <input id="c-custom_payment_detail" class="form-control" readonly="readonly" name="row[custominfo.custom_payment_detail]" type="text" value="{$row.custominfo.custom_payment_detail|htmlentities}">
+            <input id="c-custom_payable_total" class="form-control" readonly="readonly" name="row[custominfo.custom_payable_total]" type="text" value="{$row.custominfo.custom_payable_total|htmlentities}">
         </div>
     </div>
     <div class="form-group">
@@ -142,7 +142,7 @@
     
     
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Custom_credit_type')}:</label>
+        <label class="control-label col-xs-12 col-sm-1">{:__('Custom_credit_type')}:</label>
         <div class="col-xs-12 col-sm-8">
                         
             <select  id="c-custom_credit_type" class="form-control selectpicker" name="row[custom_credit_type]">
@@ -240,6 +240,12 @@
            		<a href="javascript:;" class="btn btn-success btn-add {:$auth->check('custom/contact/add')?'':'hide'}" title="{:__('Add')}" ><i class="fa fa-plus"></i> {:__('Add')}</a>
                <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled {:$auth->check('custom/contact/edit')?'':'hide'}" title="{:__('Edit')}" ><i class="fa fa-pencil"></i> {:__('Edit')}</a>
               	<a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled {:$auth->check('custom/contact/del')?'':'hide'}" title="{:__('Delete')}" ><i class="fa fa-trash"></i> {:__('Delete')}</a>       
+             	<a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
+                   <i class="fa fa-dollar"></i>
+                   <span class="extend">
+                       合计金额：<span id="sdetail_total">{$row.custominfo.custom_sale_total|htmlentities}</span>         
+                   </span>
+               </a>
          		</div>
    			<table id="sdetail" class="table table-striped table-bordered table-hover table-nowrap"
             	data-operate-edit="{:$auth->check('custom/sdetail/edit')}" 
@@ -297,6 +303,12 @@
            		<a href="javascript:;" class="btn btn-success btn-add {:$auth->check('custom/contact/add')?'':'hide'}" title="{:__('Add')}" ><i class="fa fa-plus"></i> {:__('Add')}</a>
                <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled {:$auth->check('custom/contact/edit')?'':'hide'}" title="{:__('Edit')}" ><i class="fa fa-pencil"></i> {:__('Edit')}</a>
               	<a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled {:$auth->check('custom/contact/del')?'':'hide'}" title="{:__('Delete')}" ><i class="fa fa-trash"></i> {:__('Delete')}</a>       
+         		<a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
+                   <i class="fa fa-dollar"></i>
+                   <span class="extend">
+                       款项合计：<span id="payment_total">0</span>         
+                   </span>
+               </a>
          		</div>
    			<table id="payment" class="table table-striped table-bordered table-hover table-nowrap"
             	data-operate-edit="{:$auth->check('custom/payment/edit')}" 

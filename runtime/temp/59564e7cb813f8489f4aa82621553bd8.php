@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:101:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/creditcustom/edit.html";i:1609419094;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:101:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/creditcustom/edit.html";i:1614780471;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -151,9 +151,9 @@
             <input id="c-custom_copyright" class="form-control" readonly="readonly" name="row[custominfo.custom_copyright]" type="text" value="<?php echo htmlentities($row['custominfo']['custom_copyright']); ?>">
         </div>
     
-        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custominfo.custom_payment_detail'); ?>:</label>
+        <label class="control-label col-xs-1 col-sm-1"><?php echo __('Custominfo.custom_payable_total'); ?>:</label>
         <div class="col-xs-1 col-sm-1">
-            <input id="c-custom_payment_detail" class="form-control" readonly="readonly" name="row[custominfo.custom_payment_detail]" type="text" value="<?php echo htmlentities($row['custominfo']['custom_payment_detail']); ?>">
+            <input id="c-custom_payable_total" class="form-control" readonly="readonly" name="row[custominfo.custom_payable_total]" type="text" value="<?php echo htmlentities($row['custominfo']['custom_payable_total']); ?>">
         </div>
     </div>
     <div class="form-group">
@@ -292,6 +292,12 @@
            		<a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('custom/contact/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
                <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('custom/contact/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
               	<a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('custom/contact/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>       
+             	<a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
+                   <i class="fa fa-dollar"></i>
+                   <span class="extend">
+                       合计金额：<span id="sdetail_total"><?php echo htmlentities($row['custominfo']['custom_sale_total']); ?></span>         
+                   </span>
+               </a>
          		</div>
    			<table id="sdetail" class="table table-striped table-bordered table-hover table-nowrap"
             	data-operate-edit="<?php echo $auth->check('custom/sdetail/edit'); ?>" 
@@ -349,6 +355,12 @@
            		<a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('custom/contact/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
                <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('custom/contact/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
               	<a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('custom/contact/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>       
+         		<a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
+                   <i class="fa fa-dollar"></i>
+                   <span class="extend">
+                       款项合计：<span id="payment_total"><?php echo htmlentities($row['custominfo']['custom_payment_total']); ?></span>         
+                   </span>
+               </a>
          		</div>
    			<table id="payment" class="table table-striped table-bordered table-hover table-nowrap"
             	data-operate-edit="<?php echo $auth->check('custom/payment/edit'); ?>" 

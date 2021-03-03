@@ -87,6 +87,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Controller.api.bindevent();
         },
         edit: function () {
+        	//$("#sdetail_total").text(Config.sdetail_total);
+        	//$("#payment_total").text(Config.payment_total);
         	Controller.api.bindevent();
         	  // 1、联系人-初始化表格参数配置
             Table.api.init();
@@ -246,6 +248,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
            Table.api.init();
 
             var table5 = $("#sdetail");
+           
 
             // 初始化表格
             table5.bootstrapTable({
@@ -260,6 +263,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 toolbar: '#toolbar5',
                 pk: 'custom_sdetail_id',
                 sortName: 'custom_sdetail_id',
+                singleSelect: true,
                 columns: [
                      [
                         {checkbox: true},
@@ -371,6 +375,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
            Table.api.init();
 
             var table8 = $("#payment");
+            
 
             // 初始化表格
             table8.bootstrapTable({
@@ -497,7 +502,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
-                Form.api.bindevent($("form[role=form]"));
+                Form.api.bindevent($("form[role=form]"),function (data,ret) {
+                
+                Layer.alert(data);
+              //return false;
+                },function (data,ret) {},function (success,error) {});
             }
         }
     };

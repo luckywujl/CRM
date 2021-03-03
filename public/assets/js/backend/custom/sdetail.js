@@ -21,6 +21,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'custom_sdetail_id',
                 sortName: 'custom_sdetail_id',
+                singleSelect: true,
                 columns: [
                     [
                         {checkbox: true},
@@ -63,6 +64,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 url: 'custom/sdetail/recyclebin' + location.search,
                 pk: 'custom_sdetail_id',
                 sortName: 'custom_sdetail_id',
+                singleSelect: true,
                 columns: [
                     [
                         {checkbox: true},
@@ -115,9 +117,22 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Table.api.bindevent(table);
         },
         add: function () {
+        	 $("#c-custom_sdetail_price").bind("keyup",function (event) {
+        	 	$("#c-custom_sdetail_amount").val($("#c-custom_sdetail_price").val()*$("#c-custom_sdetail_number").val());
+        	 })
+        	 $("#c-custom_sdetail_number").bind("keyup",function (event) {
+        	 	$("#c-custom_sdetail_amount").val($("#c-custom_sdetail_price").val()*$("#c-custom_sdetail_number").val());
+        	 })
+        	 
             Controller.api.bindevent();
         },
         edit: function () {
+        	$("#c-custom_sdetail_price").bind("keyup",function (event) {
+        	 	$("#c-custom_sdetail_amount").val($("#c-custom_sdetail_price").val()*$("#c-custom_sdetail_number").val());
+        	 })
+        	 $("#c-custom_sdetail_number").bind("keyup",function (event) {
+        	 	$("#c-custom_sdetail_amount").val($("#c-custom_sdetail_price").val()*$("#c-custom_sdetail_number").val());
+        	 })        	 
             Controller.api.bindevent();
         },
         api: {

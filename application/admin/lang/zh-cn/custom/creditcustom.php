@@ -49,7 +49,7 @@ return [
     'Custominfo.custom_pc_website'           => 'PC网站',
     'Custominfo.custom_website_code'          => '网站号码',
     'Custominfo.custom_copyright'             => '版权',
-    'Custominfo.custom_payment_detail'        => '款项明细',
+    'Custominfo.custom_payable_total'         => '待付款项',
     'Custominfo.custom_opening_dete'          => '下户日期',
     'Custominfo.custom_full_name'             => '客户全称',
     'Custominfo.custom_baidu_id'              => '53百度ID',

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/sdetail/edit.html";i:1610030484;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:96:"/home/www/admin/localhost_9001/wwwroot/public/../application/admin/view/custom/sdetail/edit.html";i:1614729546;s:81:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/layout/default.html";i:1588765310;s:78:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/meta.html";i:1588765310;s:80:"/home/www/admin/localhost_9001/wwwroot/application/admin/view/common/script.html";i:1588765310;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -52,8 +52,11 @@
                             <div class="content">
                                 <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
+     <div class="col-xs-12 col-sm-8" hidden="hidden">
+            <input id="c-custom_id"  data-rule="required" class="form-control" name="custom_id" type="text" value="<?php echo htmlentities($row['custom_id']); ?>">
+      </div>
      <div class="form-group" >
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_id'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_name'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-custom_name" readonly="readonly" data-rule="required" class="form-control" name="custom_name" type="text" value="<?php echo htmlentities($row['custominfo']['custom_full_name']); ?>">
         </div>
@@ -86,6 +89,12 @@
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_sdetail_number'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-custom_sdetail_number" class="form-control" name="row[custom_sdetail_number]" type="number" value="<?php echo htmlentities($row['custom_sdetail_number']); ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Custom_sdetail_amount'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-custom_sdetail_amount" readonly="readonly" class="form-control" name="row[custom_sdetail_amount]" type="number" value="<?php echo htmlentities($row['custom_sdetail_amount']); ?>">
         </div>
     </div>
     <div class="form-group">

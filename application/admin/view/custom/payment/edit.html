@@ -1,5 +1,8 @@
 <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
+    <div class="col-xs-12 col-sm-8" hidden="hidden">
+            <input id="c-custom_id"  data-rule="required" class="form-control" name="custom_id" type="text" value="{$row.custom_id|htmlentities}">
+      </div>
     <div class="form-group" >
         <label class="control-label col-xs-12 col-sm-2">{:__('Custom_id')}:</label>
         <div class="col-xs-12 col-sm-8">

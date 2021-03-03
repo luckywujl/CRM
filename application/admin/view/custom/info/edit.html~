@@ -139,7 +139,7 @@
     </div>
     
     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=30>
-    <a href="#contact">客户联系人</a>  <a href="#remind">客户提醒</a> <a href="#purpose">客户意向</a>
+    <a href="#contact">客户联系人</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="#remind">客户提醒</a> &nbsp; &nbsp; &nbsp; &nbsp;<a href="#purpose">客户意向</a>
     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=30>
     <a name="contact"></a>
     <h3><u>客户联系人 &nbsp; &nbsp; &nbsp; &nbsp;</u></h3>

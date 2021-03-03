@@ -25,7 +25,7 @@ return [
     'Custom_pc_website'            => 'PC网站',
     'Custom_website_code'          => '网站号码',
     'Custom_copyright'             => '版权',
-    'Custom_payment_detail'        => '款项明细',
+    'Custom_payable_total'         => '待付款项',
     'Custom_opening_dete'          => '下户日期',
     'Custom_full_name'             => '客户全称',
     'Custom_baidu_id'              => '53百度ID',
